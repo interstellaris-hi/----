@@ -51,7 +51,7 @@
             resultArea.innerHTML = "正在分析...";
 
             try {
-                const res = await fetch("/extract", {
+                const res = await fetch("/api/extract", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ text })
